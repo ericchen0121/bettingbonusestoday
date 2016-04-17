@@ -1,0 +1,31 @@
+<template name="header">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">Betting Bonuses Today</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="{{ pathFor 'betting' }}">Betting</a>
+          </li>
+          <li>
+            <a href="{{ pathFor 'sportsBook' }}">Sportsbooks</a>
+          </li>
+          <li>
+            <a href="{{ pathFor 'news' }}">News</a>
+          </li>
+          <li>
+            <a href="{{ pathFor 'more' }}">More</a>
+          </li>
+          <li>
+            <a href="{{ pathFor 'admin' }}">+ Blog</a>
+          </li>
+        </ul> 
+        <ul class="nav navbar-nav navbar-right">
+          {{> loginButtons}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
